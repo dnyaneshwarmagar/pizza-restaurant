@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  font-family: "Inter Tight", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 0%;
+  padding: 2vh;
+  background-color: black;
+}
+header {
+  position: sticky;
+  top: 0;
+}
+a{
+    text-decoration: none;
+    color:white 
+}
+.nav-box-2 {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 3vw;
+}
+.nav-box-3 {
+  display: flex;
+  justify-content: space-between;
+  gap: 3vw;
+}
+.social-icons {
+  text-decoration: none;
+  color: white;
+}
+
+.main-div {
+  background-image: url("./assets/pizza.png");
+  background-size: cover;
+  height: 120vh;
+  display: flex;
+  flex-direction: column;
+  padding-left: 2vw;
+}
+.pizza-img {
+  max-width: 100%;
+  height: 100%;
+}
+.about-us-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin: 3vw 5vw;
+}
+.about-us-heading-div {
+  border-bottom: red 6px solid;
+  text-align: center;
+  width: 30%;
+  margin-bottom: 5vw;
+}
+.about-flex-div {
+  display: flex;
+  justify-content: space-around;
+}
+.about-flex-div div {
+  width: 45%;
+}
+.about-img-div > img {
+  width: 90%;
+  height: 90%;
+}
+.menu-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 3vw 7vw;
+  gap: 4vw;
+}
+.menu-heading-div,
+.gallery-heading-div,
+.find-us-heading-div,
+.carousal-heading-div {
+  border-bottom: red 6px solid;
+  text-align: center;
+  width: 30%;
+}
+.menu-grid-div {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 5%;
+}
+.menu-grid-div > div {
+  display: flex;
+}
+.menu-grid-div > div > div {
+  width: 50%;
+}
+.menu-grid-div > div > div > img {
+  width: 90%;
+  height: 80%;
+}
+.carousal-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 3vw 7vw;
+  height: 90vh;
+  gap: 4vw;
+  box-sizing: border-box;
+}
+
+.gallery-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 3vw 7vw;
+  gap: 4vw;
+}
+.img-gallery-div {
+  display: grid;
+  width: 100%;
+
+  grid-template-areas:
+    "first second fifth"
+    "first second fifth"
+    "first third fifth"
+    "first third sixth"
+    "first fourth sixth"
+    "first fourth sixth";
+  grid-template-columns: 55% 1fr 1fr;
+  grid-template-rows: repeat(6, 15%);
+  gap: 1%;
+}
+.first {
+  grid-area: first;
+}
+.second {
+  grid-area: second;
+}
+.third {
+  grid-area: third;
+}
+.fourth {
+  grid-area: fourth;
+}
+.fifth {
+  grid-area: fifth;
+}
+.sixth {
+  grid-area: sixth;
+}
+.img-gallery-div > div > img {
+  width: 100%;
+  height: 100%;
+}
+.find-us-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 3vw 7vw;
+  height: 90vh;
+  gap: 20%;
+}
+.find-us-first-div {
+  display: flex;
+  justify-content: space-between;
+  height: 50%;
+  align-items: center;
+  margin-bottom: 5%;
+}
+.find-us-first-div > div {
+  width: 50%;
+  height: 100%;
+}
+.find-us-child-div {
+  display: flex;
+  flex-direction: column;
+  gap: 10%;
+}
+.footer-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 3vw 7vw;
+}
+.footer-div > div {
+  width: 50%;
+}
+.icons-related-box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10%;
+}
+.icons-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-left: 10%;
+}
+#embed-map-display {
+  /* padding: 40% 10%; */
+  padding-right: 10%;
+}
